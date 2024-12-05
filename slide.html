@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Draggable Image Slider | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles-carousel.css">
+    <link rel="stylesheet" href="styles-navbar.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <!-- JS -->
+    <script src="script-carousel.js" defer></script>
+    <script defer src="script-navbar.js"></script>
+
+  </head>
+  <body></body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo" class="img-fluid logo-small">
+        </a>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="slide.html" class="href">Home</a> </li>
+                <li><a href="project.html" class="href">Project</a></li>
+                <li><a href="about.html" class="href">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <h1>Welcome to my Gallery!</h1>
+      <a href="project.html">View all my Projects here -></a>
+    </div>
+
+
+  <!-- Carousel -->
+    
+    <div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel">
+        <div> <img src="images/art1.jpeg" alt="img" draggable="false"> </div>
+          <div class="caption">
+            <h3>Caption</h3>
+            <p>
+              This is the description of the gallery item
+            </p>
+          </div>
+        <div> <img class="image2" src="images/art2.jpeg" alt="img" draggable="false"> </div>
+        <div class="caption">
+          <h3>Caption</h3>
+          <p>
+            This is the description of the gallery item
+          </p>
+        </div>
+        <div> <img src="images/art3.jpeg" alt="img" draggable="false"> </div>
+        <div class="caption">
+          <h3>Caption</h3>
+          <p>
+            This is the description of the gallery item
+          </p>
+        </div>
+        <div> <img class = "image2" src="images/art9.webp" alt="img" draggable="false"> </div>
+        <div class="caption">
+          <h3>Caption</h3>
+          <p>
+            This is the description of the gallery item
+          </p>
+        </div>
+        <div> <img src="images/art5.jpeg" alt="img" draggable="false"> </div>
+        <div class="caption">
+          <h3>Caption</h3>
+          <p>
+            This is the description of the gallery item
+          </p>
+        </div>
+        <div> <img class= "image2" src="images/art10.jpeg" alt="img" draggable="false"> </div>
+        <div class="caption">
+          <h3>Caption</h3>
+          <p>
+            This is the description of the gallery item
+          </p>
+        </div>
+        <div> <img src="images/art6.jpeg" alt="img" draggable="false"> </div>
+        <div class="caption">
+          <h3>Caption</h3>
+          <p>
+            This is the description of the gallery item
+          </p>
+        </div>
+        <div> <img class = "image2" src="images/art7.jpeg" alt="img" draggable="false"> </div>
+        <div class="caption">
+          <h3>Caption</h3>
+          <p>
+            This is the description of the gallery item
+          </p>
+        </div>
+      </div>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+    
+  <!-- Content -->
+  <!-- First Project -->
+<!--   <div class="content-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="row-col">
+            <h1>My First Project</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="row-col">
+            <a href="#">Full project</a>
+          </div>
+          <div class="row-col">
+            <h1>Content:</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-12-img">
+          <img class="img-content" src="https://m.media-amazon.com/images/I/81z7grlG-IS._AC_UF1000,1000_QL80_.jpg">
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+<!-- Second Project
+  <div class="content-text content-text-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="row-col">
+            <h1>My Second Project</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="row-col">
+            <a href="#">Full project</a>
+          </div>
+          <div class="row-col">
+            <h1>Content:</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-12-img">
+          <img class="img-content" src="https://m.media-amazon.com/images/I/81z7grlG-IS._AC_UF1000,1000_QL80_.jpg">
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  </body>
+</html>
