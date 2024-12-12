@@ -1,49 +1,50 @@
-body{
-/*  display: flex;*/
-  padding: 0 35px;
+body {
+  /*  display: flex;*/
   min-height: 100vh;
   align-items: flex-start;
-/*  justify-content: flex-end;*/
-
+  /*  justify-content: flex-end;*/
 }
-.wrapper{
+.wrapper {
   display: flex;
-  max-width: 50%;
+  max-width: 80%;
   margin: auto;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+  margin-top: 10vh;
 }
 
-.wrapper i{
-  top: 50%;
+.wrapper i {
   height: 44px;
   width: 44px;
-  color: #343F4F;
+  color: #343f4f;
   cursor: pointer;
   font-size: 1.15rem;
-  position: absolute;
-  text-align: center;
-  align-items: center;
   line-height: 44px;
   background: #fff;
   border-radius: 50%;
-  transform: translateY(-50%);
+  padding-left: 13px;
+  padding-right: 13px;
+  /* transform: translateY(-50%); */
   transition: transform 0.1s linear;
 }
-
+/* 
 .wrapper i:active{
   transform: translateY(-50%) scale(0.9);
-}
+} */
 
-.wrapper i:hover{
+.wrapper i:hover {
   background: #f2f2f2;
 }
-.wrapper i:first-child{
+/* .wrapper i:first-child{
   left: -22px;
   display: none;
 }
 .wrapper i:last-child{
   right: -22px;
-}
-.wrapper .carousel{
+} */
+.wrapper .carousel {
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
@@ -52,23 +53,22 @@ body{
   display: flex;
 }
 
-.carousel div{
-  margin-top: 140px;
+.carousel div {
   display: flex;
   justify-content: center;
   margin-left: 25px;
   align-items: center;
 }
-.carousel.dragging{
+.carousel.dragging {
   cursor: grab;
   scroll-behavior: auto;
 }
 
-.carousel.dragging img{
+.carousel.dragging img {
   pointer-events: none;
 }
 
-.carousel img{
+.carousel img {
   height: 200px;
   object-fit: cover;
   user-select: none;
@@ -76,15 +76,15 @@ body{
   width: auto;
 }
 
-.carousel .image2{
+.carousel .image2 {
   width: auto;
   height: 300px;
 }
-.carousel img:first-child{
+.carousel img:first-child {
   margin-left: 0px;
 }
 
-.caption{
+.caption {
   position: absolute;
   text-align: center;
 }
@@ -97,7 +97,7 @@ body{
   position: absolute;
   top: 530px;*/
 /*  border: 1px solid red;*/
-}
+/* } */
 
 /*.content-text-2{
   width: auto;
@@ -111,7 +111,7 @@ body{
 /*.col-12-img {
   display: flex;
   align-items: center; /* Untuk memposisikan secara vertikal di tengah */
-}
+/* } */
 
 /*.img-content {
   width: 100%;
@@ -131,7 +131,7 @@ body{
 } */
 
 @media screen and (max-width: 768px) {
-  .wrapper{
+  .wrapper {
     width: auto;
     left: 14.7%;
     right: 14.7%;
